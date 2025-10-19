@@ -2,10 +2,10 @@ import { CheckCircle2 } from "lucide-react";
 import officeImage from "@/assets/office-bg.jpg";
 
 const credentials = [
-  "Ph.D. in Clinical Psychology, Stanford University",
-  "Licensed Clinical Psychologist (CA License #12345)",
-  "15+ years of experience in therapeutic practice",
-  "Specialized training in CBT, DBT, and EMDR",
+  "Formação em Psicologia Clínica pela USP",
+  "Psicóloga registrada no CRP (CRP 06/123456)",
+  "Mais de 15 anos de experiência em prática terapêutica",
+  "Formação especializada em TCC, DBT e EMDR",
 ];
 
 const About = () => {
@@ -18,7 +18,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={officeImage}
-                alt="Dr. Sarah Mitchell's office"
+                alt="Consultório de Teresa Mortati"
                 className="w-full h-[500px] object-cover"
               />
             </div>
@@ -27,15 +27,15 @@ const About = () => {
 
           {/* Content */}
           <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">About Dr. Sarah Mitchell</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Sobre Teresa Mortati</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              I believe that everyone deserves a safe, compassionate space to explore their thoughts
-              and feelings. With over 15 years of experience, I've helped hundreds of individuals
-              and families navigate life's most challenging moments.
+              Acredito que todos merecem um espaço seguro e compassivo para explorar seus pensamentos
+              e sentimentos. Com mais de 15 anos de experiência, ajudei centenas de indivíduos
+              e famílias a navegarem pelos momentos mais desafiadores da vida.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              My approach combines evidence-based therapeutic techniques with a warm, personalized
-              style that honors your unique journey and experiences.
+              Minha abordagem combina técnicas terapêuticas baseadas em evidências com um estilo
+              caloroso e personalizado que honra sua jornada e experiências únicas.
             </p>
 
             <div className="space-y-3">

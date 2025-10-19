@@ -18,8 +18,8 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you within 24 hours.",
+      title: "Mensagem Enviada!",
+      description: "Obrigada por entrar em contato. Retornarei em até 24 horas.",
     });
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
@@ -35,9 +35,9 @@ const Contact = () => {
     <section id="contact" className="py-24 bg-gradient-to-b from-background to-muted/30">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Entre em Contato</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to take the first step? Reach out to schedule a consultation
+            Pronta para dar o primeiro passo? Entre em contato para agendar uma consulta
           </p>
         </div>
 
@@ -47,8 +47,8 @@ const Contact = () => {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-semibold mb-2">Phone</h3>
-              <p className="text-muted-foreground">(555) 123-4567</p>
+              <h3 className="font-semibold mb-2">Telefone</h3>
+              <p className="text-muted-foreground">(11) 98765-4321</p>
             </CardContent>
           </Card>
 
@@ -58,7 +58,7 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-muted-foreground">dr.mitchell@example.com</p>
+              <p className="text-muted-foreground">teresa.mortati@exemplo.com</p>
             </CardContent>
           </Card>
 
@@ -67,8 +67,8 @@ const Contact = () => {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-semibold mb-2">Location</h3>
-              <p className="text-muted-foreground">123 Main Street, San Francisco, CA</p>
+              <h3 className="font-semibold mb-2">Localização</h3>
+              <p className="text-muted-foreground">Rua Exemplo, 123, São Paulo, SP</p>
             </CardContent>
           </Card>
         </div>
@@ -79,7 +79,7 @@ const Contact = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Name
+                    Nome
                   </label>
                   <Input
                     id="name"
@@ -87,12 +87,12 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="Your name"
+                    placeholder="Seu nome"
                   />
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                    Phone
+                    Telefone
                   </label>
                   <Input
                     id="phone"
@@ -100,7 +100,7 @@ const Contact = () => {
                     type="tel"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="(555) 123-4567"
+                    placeholder="(11) 98765-4321"
                   />
                 </div>
               </div>
@@ -116,13 +116,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="your.email@example.com"
+                  placeholder="seu.email@exemplo.com"
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Message
+                  Mensagem
                 </label>
                 <Textarea
                   id="message"
@@ -130,13 +130,13 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  placeholder="Tell me a bit about what you're looking for..."
+                  placeholder="Conte-me um pouco sobre o que você está procurando..."
                   className="min-h-[150px]"
                 />
               </div>
 
               <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
-                Send Message
+                Enviar Mensagem
               </Button>
             </form>
           </CardContent>

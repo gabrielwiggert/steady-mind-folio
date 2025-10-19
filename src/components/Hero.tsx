@@ -25,14 +25,14 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
         <div className="max-w-2xl animate-fade-in">
-          <p className="text-primary font-medium mb-4">Licensed Clinical Psychologist</p>
+          <p className="text-primary font-medium mb-4">Psicóloga Clínica</p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
-            Your Journey to
-            <span className="block text-primary mt-2">Healing Starts Here</span>
+            Sua Jornada de
+            <span className="block text-primary mt-2">Cura Começa Aqui</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            Compassionate, evidence-based therapy to help you navigate life's challenges
-            and discover your inner strength.
+            Terapia compassiva e baseada em evidências para ajudá-lo a navegar pelos desafios da vida
+            e descobrir sua força interior.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
@@ -40,7 +40,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="bg-primary hover:bg-primary/90 text-primary-foreground group"
             >
-              Schedule a Consultation
+              Agendar uma Consulta
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
@@ -52,7 +52,7 @@ const Hero = () => {
               }}
               className="border-primary text-primary hover:bg-primary/10"
             >
-              Learn More
+              Saiba Mais
             </Button>
           </div>
         </div>

@@ -4,45 +4,45 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Dr. Sarah Mitchell</h3>
+            <h3 className="text-xl font-semibold mb-4">Teresa Mortati</h3>
             <p className="text-muted-foreground">
-              Licensed Clinical Psychologist dedicated to helping you find your path to wellness.
+              Psicóloga Clínica dedicada a ajudá-lo a encontrar seu caminho para o bem-estar.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
-                  Services
+                  Serviços
                 </a>
               </li>
               <li>
                 <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
-                  About
+                  Sobre
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contact
+                  Contato
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Office Hours</h4>
+            <h4 className="font-semibold mb-4">Horário de Atendimento</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>Monday - Friday: 9am - 6pm</li>
-              <li>Saturday: 10am - 3pm</li>
-              <li>Sunday: Closed</li>
+              <li>Segunda a Sexta: 9h - 18h</li>
+              <li>Sábado: 10h - 15h</li>
+              <li>Domingo: Fechado</li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-border text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Dr. Sarah Mitchell. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Teresa Mortati. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

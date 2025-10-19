@@ -4,27 +4,27 @@ import { Heart, Users, Brain, Sparkles } from "lucide-react";
 const services = [
   {
     icon: Heart,
-    title: "Individual Therapy",
+    title: "Terapia Individual",
     description:
-      "One-on-one sessions tailored to your unique needs, focusing on personal growth and emotional well-being.",
+      "Sessões personalizadas e individuais focadas nas suas necessidades únicas, crescimento pessoal e bem-estar emocional.",
   },
   {
     icon: Users,
-    title: "Family Counseling",
+    title: "Terapia Familiar",
     description:
-      "Strengthen family bonds and improve communication through collaborative therapeutic approaches.",
+      "Fortaleça os laços familiares e melhore a comunicação através de abordagens terapêuticas colaborativas.",
   },
   {
     icon: Brain,
-    title: "Anxiety & Depression",
+    title: "Ansiedade e Depressão",
     description:
-      "Evidence-based treatments including CBT and mindfulness techniques to manage symptoms and build resilience.",
+      "Tratamentos baseados em evidências incluindo TCC e técnicas de mindfulness para gerenciar sintomas e construir resiliência.",
   },
   {
     icon: Sparkles,
-    title: "Trauma Recovery",
+    title: "Recuperação de Traumas",
     description:
-      "Specialized support for processing traumatic experiences and developing healthy coping mechanisms.",
+      "Suporte especializado para processar experiências traumáticas e desenvolver mecanismos saudáveis de enfrentamento.",
   },
 ];
 
@@ -33,9 +33,9 @@ const Services = () => {
     <section id="services" className="py-24 bg-gradient-to-b from-muted/30 to-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Services I Offer</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Serviços Oferecidos</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Specialized therapeutic services designed to support your mental health journey
+            Serviços terapêuticos especializados desenhados para apoiar sua jornada de saúde mental
           </p>
         </div>
 
