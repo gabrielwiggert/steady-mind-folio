@@ -68,7 +68,7 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 flex flex-col gap-4 animate-fade-in">
+          <div className="md:hidden mt-4 pb-4 flex flex-col gap-4 animate-fade-in bg-background rounded-lg shadow-lg px-4 pt-2">
             <button
               onClick={() => scrollToSection("home")}
               className="text-foreground hover:text-primary transition-colors text-left py-2"
