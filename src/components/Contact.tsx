@@ -1,34 +1,13 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Mensagem Enviada!",
-      description: "Obrigada por entrar em contato. Retornarei em até 24 horas.",
-    });
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "5519982922509";
+    const message = "Olá! Gostaria de agendar uma consulta.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -73,74 +52,26 @@ const Contact = () => {
           </Card>
         </div>
 
-        <Card className="max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "300ms" }}>
-          <CardContent className="pt-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Nome
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    placeholder="Seu nome"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                    Telefone
-                  </label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="(11) 98765-4321"
-                  />
-                </div>
+        <div className="max-w-2xl mx-auto text-center animate-fade-in" style={{ animationDelay: "300ms" }}>
+          <Card>
+            <CardContent className="pt-8 pb-8">
+              <div className="mb-6">
+                <h3 className="text-2xl font-semibold mb-2">Fale Comigo pelo WhatsApp</h3>
+                <p className="text-muted-foreground">
+                  Clique no botão abaixo para iniciar uma conversa e agendar sua consulta
+                </p>
               </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email
-                </label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  placeholder="seu.email@exemplo.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Mensagem
-                </label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  placeholder="Conte-me um pouco sobre o que você está procurando..."
-                  className="min-h-[150px]"
-                />
-              </div>
-
-              <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
-                Enviar Mensagem
+              <Button
+                onClick={handleWhatsAppClick}
+                className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-8 py-6 text-lg"
+                size="lg"
+              >
+                <MessageCircle className="w-6 h-6 mr-2" />
+                Conversar no WhatsApp
               </Button>
-            </form>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );
