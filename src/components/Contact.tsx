@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Entre em Contato</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Pronta para dar o primeiro passo? Entre em contato para agendar uma consulta
+            Pronto para dar o primeiro passo? Entre em contato para agendar uma consulta
           </p>
         </div>
 
@@ -27,7 +27,7 @@ const Contact = () => {
                 <Phone className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold mb-2">Telefone</h3>
-              <p className="text-muted-foreground">(11) 98765-4321</p>
+              <p className="text-muted-foreground">(19) 98292-2509</p>
             </CardContent>
           </Card>
 
@@ -37,7 +37,7 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-muted-foreground">teresa.mortati@exemplo.com</p>
+              <p className="text-muted-foreground">teresamortatti@gmail.com</p>
             </CardContent>
           </Card>
 
@@ -47,7 +47,7 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold mb-2">Localização</h3>
-              <p className="text-muted-foreground">Rua Exemplo, 123, São Paulo, SP</p>
+              <p className="text-muted-foreground">Campinas, São Paulo</p>
             </CardContent>
           </Card>
         </div>

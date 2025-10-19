@@ -10,15 +10,15 @@ const services = [
   },
   {
     icon: Users,
-    title: "Terapia Familiar",
+    title: "Psicanálise",
     description:
-      "Fortaleça os laços familiares e melhore a comunicação através de abordagens terapêuticas colaborativas.",
+      "Exploração profunda do inconsciente para entender padrões de comportamento e promover mudanças duradouras na vida pessoal.",
   },
   {
     icon: Brain,
     title: "Ansiedade e Depressão",
     description:
-      "Tratamentos baseados em evidências incluindo TCC e técnicas de mindfulness para gerenciar sintomas e construir resiliência.",
+      "Tratamentos baseados em evidências e técnicas para gerenciar sintomas e construir resiliência.",
   },
   {
     icon: Sparkles,

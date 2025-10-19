@@ -2,10 +2,9 @@ import { CheckCircle2 } from "lucide-react";
 import officeImage from "@/assets/office-bg.jpg";
 
 const credentials = [
-  "Formação em Psicologia Clínica pela USP",
-  "Psicóloga registrada no CRP (CRP 06/123456)",
-  "Mais de 15 anos de experiência em prática terapêutica",
-  "Formação especializada em TCC, DBT e EMDR",
+  "Formação em Psicanálise pelo CEFAS",
+  "Experiência com adolescentes e adultos",
+  "Formação especializada em Psicanálise Freudiana e Lacaniana",
 ];
 
 const About = () => {
@@ -30,12 +29,11 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Sobre Teresa Mortati</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Acredito que todos merecem um espaço seguro e compassivo para explorar seus pensamentos
-              e sentimentos. Com mais de 15 anos de experiência, ajudei centenas de indivíduos
-              e famílias a navegarem pelos momentos mais desafiadores da vida.
+              e sentimentos. Ajudo pacientes a navegarem pelos momentos mais desafiadores da vida.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Minha abordagem combina técnicas terapêuticas baseadas em evidências com um estilo
-              caloroso e personalizado que honra sua jornada e experiências únicas.
+              acolhedor e personalizado que honra sua jornada e experiências únicas.
             </p>
 
             <div className="space-y-3">
