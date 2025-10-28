@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Teresa Mortati</h3>
+            <h3 className="text-xl font-semibold mb-4">Teresa Mortatti</h3>
             <p className="text-muted-foreground">
               Psicóloga Clínica dedicada a ajudá-lo a encontrar seu caminho para o bem-estar.
             </p>
@@ -34,15 +34,15 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Horário de Atendimento</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>Segunda a Sexta: 9h - 18h</li>
-              <li>Sábado: 10h - 15h</li>
+              <li>Segunda a Sexta: 13h - 21h</li>
+              <li>Sábado: 8h - 14h</li>
               <li>Domingo: Fechado</li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-border text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Teresa Mortati. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Teresa Mortatti. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

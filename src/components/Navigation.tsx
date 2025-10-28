@@ -30,7 +30,7 @@ const Navigation = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-semibold text-primary">Teresa Mortati</h1>
+          <h1 className="text-2xl font-semibold text-primary">Teresa Mortatti</h1>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">

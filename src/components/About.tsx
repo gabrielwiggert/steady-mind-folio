@@ -17,7 +17,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={officeImage}
-                alt="Consultório de Teresa Mortati"
+                alt="Consultório de Teresa Mortatti"
                 className="w-full h-[500px] object-cover"
               />
             </div>
@@ -26,7 +26,7 @@ const About = () => {
 
           {/* Content */}
           <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Sobre Teresa Mortati</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Sobre Teresa Mortatti</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Acredito que todos merecem um espaço seguro e compassivo para explorar seus pensamentos
               e sentimentos. Ajudo pacientes a navegarem pelos momentos mais desafiadores da vida.
