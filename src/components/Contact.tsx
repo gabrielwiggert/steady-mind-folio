@@ -61,14 +61,16 @@ const Contact = () => {
                   Clique no botão abaixo para iniciar uma conversa e agendar sua consulta
                 </p>
               </div>
-              <Button
-                onClick={handleWhatsAppClick}
-                className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-8 py-6 text-lg"
-                size="lg"
-              >
-                <MessageCircle className="w-6 h-6 mr-2" />
-                Conversar no WhatsApp
-              </Button>
+              <div className="flex justify-center">
+                <Button
+                  onClick={handleWhatsAppClick}
+                  className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-8 py-6 text-lg"
+                  size="lg"
+                >
+                  <MessageCircle className="w-6 h-6 mr-2" />
+                  Conversar no WhatsApp
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </div>
