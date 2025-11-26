@@ -4,27 +4,24 @@ import { Heart, Users, Brain, Sparkles } from "lucide-react";
 const services = [
   {
     icon: Heart,
-    title: "Terapia Individual",
-    description:
-      "Sessões personalizadas e individuais focadas nas suas necessidades únicas, crescimento pessoal e bem-estar emocional.",
+    title: "Atendimentos",
+    description: "Individuais ou em grupos, para jovens, adultos e idosos.",
   },
   {
     icon: Users,
-    title: "Psicanálise",
+    title: "Grupanálise",
     description:
-      "Exploração profunda do inconsciente para entender padrões de comportamento e promover mudanças duradouras na vida pessoal.",
+      "Utilização de grupos para promover a compreensão do indivíduo dentro e fora deles.",
   },
   {
     icon: Brain,
-    title: "Ansiedade e Depressão",
-    description:
-      "Tratamentos baseados em evidências e técnicas para gerenciar sintomas e construir resiliência.",
+    title: "Grupos de Estudos",
+    description: "Estudos em psicanálise e temas contemporâneos.",
   },
   {
     icon: Sparkles,
-    title: "Recuperação de Traumas",
-    description:
-      "Suporte especializado para processar experiências traumáticas e desenvolver mecanismos saudáveis de enfrentamento.",
+    title: "Casa Fluxo",
+    description: "Coletivo de Psicanálise e Contemporaneidade.",
   },
 ];
 
@@ -34,9 +31,6 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Serviços Oferecidos</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Serviços terapêuticos especializados desenhados para apoiar sua jornada de saúde mental
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">

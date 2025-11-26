@@ -2,9 +2,11 @@ import { CheckCircle2 } from "lucide-react";
 import officeImage from "@/assets/office-bg.jpg";
 
 const credentials = [
-  "Formação em Psicanálise pelo CEFAS",
-  "Experiência com adolescentes e adultos",
-  "Formação especializada em Psicanálise Freudiana e Lacaniana",
+  "Graduada em Ciências Sociais – Universidade Estadual de Campinas (UNICAMP)",
+  "Docente no curso de Graduação - Centro Universitário Nossa Senhora do Patrocínio, Itu, São Paulo.",
+  "Pesquisadora junto ao CNPq na Faculdade de Educação da Universidade Estadual de Campinas no Projeto “Educação para o Trabalho“.",
+  "Membro integrante do LESC (Laboratório de Estudos Sociedade e Cultura) na PUC Campinas.",
+  "Autora do livro Atualidades no Cinema, Editora Entremares, 2014 (ISBN: 978-85-917823-0-7).",
 ];
 
 const About = () => {
@@ -28,12 +30,14 @@ const About = () => {
           <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Sobre Teresa Mortatti</h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Acredito que todos merecem um espaço seguro e compassivo para explorar seus pensamentos
-              e sentimentos. Ajudo pacientes a navegarem pelos momentos mais desafiadores da vida.
+              Psicanalista e educadora pós-graduada em Psicanálise pelo Cefas (Centro de Formação e
+              Assistência à Saúde).
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Minha abordagem combina técnicas terapêuticas baseadas em evidências com um estilo
-              acolhedor e personalizado que honra sua jornada e experiências únicas.
+              Pós-graduada em Neuropsicanálise e Psicanálise de Grupo. <br />
+              Pós-Graduada Grupanálise pelo Instituto Gerar <br />
+              Integrante e fundadora do Coletivo “Vão-Psicanálise e Contemporaneidade” <br />
+              Membro da Casa Fluxo, coletivo de Psicanálise e Contemporaneidade.
             </p>
 
             <div className="space-y-3">

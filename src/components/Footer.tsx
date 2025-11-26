@@ -5,26 +5,33 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">Teresa Mortatti</h3>
-            <p className="text-muted-foreground">
-              Psicóloga Clínica dedicada a ajudá-lo a encontrar seu caminho para o bem-estar.
-            </p>
+            <p className="text-muted-foreground">Psicanalista.</p>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#services"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Serviços
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#about"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Sobre
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#contact"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Contato
                 </a>
               </li>
