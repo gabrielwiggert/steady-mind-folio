@@ -47,12 +47,17 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold mb-2">Localização</h3>
-              <p className="text-muted-foreground">Campinas, São Paulo</p>
+              <p className="text-muted-foreground">
+                Rua Lino de Moraes Leme, 123, Nova Campinas - Campinas, São Paulo
+              </p>
             </CardContent>
           </Card>
         </div>
 
-        <div className="max-w-2xl mx-auto text-center animate-fade-in" style={{ animationDelay: "300ms" }}>
+        <div
+          className="max-w-2xl mx-auto text-center animate-fade-in"
+          style={{ animationDelay: "300ms" }}
+        >
           <Card>
             <CardContent className="pt-8 pb-8">
               <div className="mb-6">

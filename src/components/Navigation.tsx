@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import handwritingLogo from "@/assets/handwriting-transparent-bg.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,7 +31,16 @@ const Navigation = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-semibold text-primary">Teresa Mortatti</h1>
+          <button
+            onClick={() => scrollToSection("home")}
+            className="cursor-pointer hover:opacity-80 transition-opacity"
+          >
+            <img
+              src={handwritingLogo}
+              alt="Teresa Mortatti"
+              className="h-8 md:h-10 w-auto object-contain"
+            />
+          </button>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
@@ -58,7 +68,10 @@ const Navigation = () => {
             >
               Sobre
             </button>
-            <Button onClick={() => scrollToSection("contact")} className="bg-primary hover:bg-primary/90">
+            <Button
+              onClick={() => scrollToSection("contact")}
+              className="bg-primary hover:bg-primary/90"
+            >
               Contato
             </Button>
           </div>
@@ -99,7 +112,10 @@ const Navigation = () => {
             >
               Sobre
             </button>
-            <Button onClick={() => scrollToSection("contact")} className="bg-primary hover:bg-primary/90 w-full">
+            <Button
+              onClick={() => scrollToSection("contact")}
+              className="bg-primary hover:bg-primary/90 w-full"
+            >
               Contato
             </Button>
           </div>
