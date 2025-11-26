@@ -5,7 +5,7 @@ const services = [
   {
     icon: Heart,
     title: "Atendimentos",
-    description: "Individuais ou em grupos, para jovens, adultos e idosos.",
+    description: "Sessões de terapia individuais ou em grupos, para jovens, adultos e idosos.",
   },
   {
     icon: Users,

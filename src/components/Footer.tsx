@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">Teresa Mortatti</h3>
-            <p className="text-muted-foreground">Psicanalista.</p>
+            <p className="text-muted-foreground">Psicanalista</p>
           </div>
 
           <div>
@@ -17,6 +17,14 @@ const Footer = () => {
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Serviços
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#psychoanalysis"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Psicanálise
                 </a>
               </li>
               <li>

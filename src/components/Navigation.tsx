@@ -47,6 +47,12 @@ const Navigation = () => {
               Serviços
             </button>
             <button
+              onClick={() => scrollToSection("psychoanalysis")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Psicanálise
+            </button>
+            <button
               onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors"
             >
@@ -80,6 +86,12 @@ const Navigation = () => {
               className="text-foreground hover:text-primary transition-colors text-left py-2"
             >
               Serviços
+            </button>
+            <button
+              onClick={() => scrollToSection("psychoanalysis")}
+              className="text-foreground hover:text-primary transition-colors text-left py-2"
+            >
+              Psicanálise
             </button>
             <button
               onClick={() => scrollToSection("about")}
