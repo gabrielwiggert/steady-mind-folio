@@ -26,9 +26,9 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
         <div className="max-w-2xl animate-fade-in">
           <p className="text-primary font-medium mb-4">Psicanalista</p>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
             Sua jornada de
-            <span className="block text-primary mt-2 text-4xl md:text-5xl lg:text-6xl">transformação psíquica encontra aqui</span>
+            <span className="block text-primary mt-2 text-3xl md:text-4xl lg:text-5xl">transformação psíquica encontra aqui</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
             um ambiente de rigor e acolhimento, dedicado à elaboração simbólica e à constituição de
