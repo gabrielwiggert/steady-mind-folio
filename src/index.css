@@ -96,4 +96,10 @@ All colors MUST be HSL.
   .text-balance {
     text-wrap: balance;
   }
+
+  @media (prefers-color-scheme: dark) {
+    .logo-dark-invert {
+      filter: invert(1);
+    }
+  }
 }
