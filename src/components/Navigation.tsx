@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import handwritingLogo from "@/assets/handwriting-transparent-bg.png";
+import handwritingLogo from "@/assets/handwriting-transparent-bg-orange.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
