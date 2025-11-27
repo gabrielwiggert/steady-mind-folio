@@ -38,7 +38,7 @@ const Navigation = () => {
             <img
               src={handwritingLogo}
               alt="Teresa Mortatti"
-              className="h-8 md:h-10 w-auto object-contain"
+              className="h-8 md:h-10 w-auto object-contain dark:invert"
             />
           </button>
 
