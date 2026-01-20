@@ -31,11 +31,8 @@ const Hero = () => {
             <span className="block text-primary mt-2">transformação psíquica encontra aqui</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            um ambiente de rigor e acolhimento, dedicado à elaboração simbólica e à constituição de
-            novos sentidos para sua singularidade. <br />
-            Um percurso analítico embasado em sólida tradição teórica e investigação contínua,
-            oferecendo um ambiente ético de acolhimento para a ressignificação de padrões e o
-            desenvolvimento de uma liberdade existencial autêntica.
+            O percurso analítico propõe um ambiente de rigor e acolhimento, dedicado à elaboração simbólica e à constituição de novos sentidos para a singularidade. <br />
+            Um trabalho embasado em sólida tradição teórica e investigação contínua, oferecendo um espaço ético para a ressignificação de padrões e a consolidação de um novo posicionamento subjetivo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
