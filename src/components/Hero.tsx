@@ -27,12 +27,12 @@ const Hero = () => {
         <div className="max-w-2xl animate-fade-in">
           <p className="text-primary font-medium mb-4">Psicanalista</p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">
-            Sua jornada de
-            <span className="block text-primary mt-2">transformação psíquica encontra aqui</span>
+            Percurso analítico que propõe
+            <span className="block text-primary mt-2">um ambiente de rigor e acolhimento</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            O percurso analítico propõe um ambiente de rigor e acolhimento, dedicado à elaboração simbólica e à constituição de novos sentidos para a singularidade. <br />
-            Um trabalho embasado em sólida tradição teórica e investigação contínua, oferecendo um espaço ético para a ressignificação de padrões e a consolidação de um novo posicionamento subjetivo.
+            dedicado à elaboração simbólica e à constituição de novos sentidos para a singularidade. <br />
+            Trabalho embasado em sólida tradição teórica e investigação contínua, que oferece um espaço ético para a ressignificação de padrões e consolidação de um novo posicionamento subjetivo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
