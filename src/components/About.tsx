@@ -7,6 +7,7 @@ const credentials = [
   "Pesquisadora junto ao CNPq na Faculdade de Educação da Universidade Estadual de Campinas no Projeto “Educação para o Trabalho“.",
   "Membro integrante do LESC (Laboratório de Estudos Sociedade e Cultura) na PUC Campinas.",
   "Autora do livro Atualidades no Cinema, Editora Entremares, 2014 (ISBN: 978-85-917823-0-7).",
+  "Especialista em Neuropsicanálise.",
 ];
 
 const About = () => {
