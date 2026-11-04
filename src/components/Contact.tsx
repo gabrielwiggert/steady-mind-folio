@@ -3,7 +3,7 @@ import { EMAIL, WHATSAPP_URL } from "@/lib/contact";
 
 // Web3Forms delivers submissions to the inbox the access key was created for
 // (teresamortatti@gmail.com). The key is meant to be public.
-const WEB3FORMS_ACCESS_KEY = "PASTE_WEB3FORMS_ACCESS_KEY";
+const WEB3FORMS_ACCESS_KEY = "f86415d5-4ca0-4fd7-9053-f9f2be264bf6";
 const FORM_ENDPOINT = "https://api.web3forms.com/submit";
 
 type Status = "idle" | "sending" | "sent" | "error";
