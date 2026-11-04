@@ -1,59 +1,92 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Professional therapy space"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/60" />
-      </div>
+    <section className="pt-36 pb-20 md:pt-48 md:pb-32 px-6 md:px-12 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        {/* Text column */}
+        <div className="lg:col-span-7 space-y-8 pr-0 lg:pr-8">
+          <div className="inline-flex items-center space-x-3">
+            <span className="w-8 h-[1px] bg-freijo" />
+            <span className="text-xs uppercase tracking-[0.2em] text-freijo font-medium">
+              Atendimento Presencial e Online
+            </span>
+          </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
-        <div className="max-w-2xl animate-fade-in">
-          <p className="text-primary font-medium mb-4">Psicanalista</p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">
-            Percurso analítico que propõe
-            <span className="block text-primary mt-2">um ambiente de rigor e acolhimento</span>
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-[3.5rem] leading-[1.15] font-normal text-charcoal">
+            Um espaço de escuta, <i className="font-serif italic text-sage">sustentação</i> e elaboração subjetiva.
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            dedicado à elaboração simbólica e à constituição de novos sentidos para a singularidade. <br />
-            Trabalho embasado em sólida tradição teórica e investigação contínua, que oferece um espaço ético para a ressignificação de padrões e consolidação de um novo posicionamento subjetivo.
+
+          <p className="text-base sm:text-lg text-muted font-light leading-relaxed max-w-xl">
+            Clínica psicanalítica dedicada a adultos e adolescentes. Atendimentos presenciais e online.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              size="lg"
-              onClick={scrollToContact}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground group"
+
+          <div className="pt-4 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex justify-center items-center px-7 py-4 bg-sage text-linen text-xs uppercase tracking-[0.18em] hover:bg-sageDark transition-all duration-300 rounded shadow-sm"
             >
-              Agendar uma Consulta
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => {
-                const element = document.getElementById("services");
-                if (element) element.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="border-primary text-primary hover:bg-primary/10"
+              Agendar primeira conversa
+            </a>
+            <a
+              href="#clinica"
+              className="inline-flex justify-center sm:justify-start items-center text-sm text-charcoal hover:text-freijo transition-colors group py-2"
             >
-              Saiba Mais
-            </Button>
+              <span className="border-b border-freijo/50 group-hover:border-freijo pb-0.5">
+                Conhecer a proposta clínica
+              </span>
+              <svg
+                className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform text-freijo"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        {/* Visual column: editorial frame */}
+        <div className="lg:col-span-5 flex justify-center lg:justify-end">
+          <div className="relative w-full max-w-md aspect-[4/5] bg-suede rounded-lg p-6 sm:p-8 border border-suedeDark shadow-sm overflow-hidden flex flex-col justify-between">
+            {/* Sunlight beam */}
+            <div className="absolute -top-16 -right-16 w-72 h-96 bg-gradient-to-bl from-[#FBF9F5] via-[#F7F4EF]/60 to-transparent transform -rotate-12 pointer-events-none" />
+
+            <div className="relative z-10 border border-freijo/30 rounded h-full p-6 flex flex-col justify-between bg-linen/40 backdrop-blur-[2px]">
+              <div className="flex justify-between items-start">
+                <span className="font-serif italic text-sm text-muted">Escuta, ética &amp; sustentação</span>
+                <span className="w-2 h-2 rounded-full bg-sage/60" />
+              </div>
+
+              <div className="my-auto py-6 flex justify-center items-center relative">
+                <svg
+                  className="w-48 h-48 sm:w-56 sm:h-56 shadow-leaf"
+                  viewBox="0 0 200 200"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="105" cy="95" r="68" fill="#E5DEC9" fillOpacity="0.65" />
+                  <path d="M45 140 C 45 75, 145 75, 145 140" stroke="#A67C52" strokeWidth="1.2" fill="none" />
+                  <path d="M85 155 C 65 120, 90 65, 135 55 C 145 95, 125 140, 85 155 Z" fill="#5E6F64" fillOpacity="0.82" />
+                  <path d="M75 165 Q 105 110 130 45" stroke="#2C2A29" strokeWidth="1" strokeLinecap="round" />
+                  <path d="M97 120 Q 82 108 72 112" stroke="#2C2A29" strokeWidth="0.9" strokeLinecap="round" />
+                  <path d="M108 95 Q 125 85 136 88" stroke="#2C2A29" strokeWidth="0.9" strokeLinecap="round" />
+                  <circle cx="130" cy="45" r="2.5" fill="#A67C52" />
+                </svg>
+              </div>
+
+              <div className="border-t border-suedeDark pt-4">
+                <p className="font-serif italic text-sm text-charcoal/90 leading-snug">
+                  “É uma alegria estar escondido, mas um desastre não ser encontrado.”
+                </p>
+                <span className="block text-[11px] uppercase tracking-widest text-freijo mt-1">
+                  — D. W. Winnicott
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
