@@ -3,7 +3,7 @@ import { useState } from "react";
 const desktopLinks = [
   { href: "#clinica", label: "O Espaço" },
   { href: "#atuacao", label: "A Clínica" },
-  { href: "#supervisao", label: "Endereço" },
+  { href: "#contato", label: "Endereço" },
   { href: "#percurso", label: "Percurso" },
   { href: "#ensaios", label: "Escritos" },
   { href: "#contato", label: "Contato" },
@@ -37,7 +37,7 @@ const Navigation = () => {
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-8 text-sm font-light tracking-wide text-muted">
           {desktopLinks.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-charcoal transition-colors">
+            <a key={link.label} href={link.href} className="hover:text-charcoal transition-colors">
               {link.label}
             </a>
           ))}

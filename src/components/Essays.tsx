@@ -24,7 +24,7 @@ const essays: Essay[] = [
         <p>
           Em <em>O Segredo dos Seus Olhos</em>, acompanhamos personagens atravessados pelo tempo e pela tentativa de
           escrever — literalmente — uma história que ficou suspensa. Na máquina de escrever do protagonista, uma letra
-          falha repetidamente: o "A", fazendo com que a palavra <em>Temor</em> seja grafada como <em>Teiamo</em>.
+          falha repetidamente: o "A", fazendo com que <em>Te amo</em> seja grafado como <em>Temo</em>.
         </p>
         <p>
           Na clínica psicanalítica, assim como na narrativa cinematográfica, o inconsciente não se apresenta como um
