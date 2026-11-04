@@ -1,9 +1,10 @@
 import { useRef, useState, type FormEvent } from "react";
 import { EMAIL, WHATSAPP_URL } from "@/lib/contact";
 
-// FormSubmit relays submissions to EMAIL. The first submission triggers a one-time
-// "Activate Form" email to that inbox; until it's clicked, sends report failure.
-const FORM_ENDPOINT = `https://formsubmit.co/ajax/${EMAIL}`;
+// Web3Forms delivers submissions to the inbox the access key was created for
+// (teresamortatti@gmail.com). The key is meant to be public.
+const WEB3FORMS_ACCESS_KEY = "PASTE_WEB3FORMS_ACCESS_KEY";
+const FORM_ENDPOINT = "https://api.web3forms.com/submit";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
@@ -23,10 +24,15 @@ const Contact = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget;
-    const payload: Record<string, FormDataEntryValue> = Object.fromEntries(new FormData(form));
+    const payload: Record<string, FormDataEntryValue> = {
+      ...Object.fromEntries(new FormData(form)),
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: "Novo contato pelo site",
+      from_name: "Site Teresa Mortatti",
+    };
 
     const contact = String(payload["Contato"] ?? "");
-    if (contact.includes("@")) payload._replyto = contact;
+    if (contact.includes("@")) payload.replyto = contact;
 
     window.clearTimeout(resetTimer.current);
     setStatus("sending");
@@ -38,7 +44,7 @@ const Contact = () => {
         body: JSON.stringify(payload),
       });
       const result = await response.json();
-      if (!response.ok || String(result.success) !== "true") throw new Error(result.message);
+      if (!response.ok || result.success !== true) throw new Error(result.message);
 
       form.reset();
       setStatus("sent");
@@ -197,11 +203,9 @@ const Contact = () => {
                 </div>
               )}
 
-              {/* Kept last: space-y-6 would otherwise push the first row down */}
-              <input type="hidden" name="_subject" value="Novo contato pelo site" />
-              <input type="hidden" name="_template" value="table" />
-              {/* Honeypot: bots fill it, FormSubmit discards those submissions */}
-              <input type="text" name="_honey" tabIndex={-1} autoComplete="off" className="hidden" />
+              {/* Honeypot, kept last so space-y-6 doesn't push the first row down.
+                  Bots tick it; Web3Forms rejects those submissions. */}
+              <input type="checkbox" name="botcheck" tabIndex={-1} className="hidden" />
             </form>
           </div>
         </div>
